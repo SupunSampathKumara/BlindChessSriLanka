@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Chess Sri Lanka - Accessible Chess Application</title>
+    <meta name="description" content="Official website of Blind Chess Sri Lanka, a fully accessible chess application designed for visually impaired and partially sighted players. Download for Windows and Android.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-link" aria-label="Blind Chess Sri Lanka Home">
+                <img src="icon.png" alt="Blind Chess Sri Lanka App Icon" class="logo-img">
+                <span class="logo-text">Blind Chess Sri Lanka</span>
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about" class="nav-item" aria-label="Learn about the project and its creator">About us</a></li>
+                    <li><a href="#contact" class="nav-item" aria-label="View developer contact information">Contact us</a></li>
+                    <li><a href="#donate" class="nav-item" aria-label="Support the project through donations">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Hero Section (Downloads in the Center) -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <img src="icon.png" alt="Blind Chess Sri Lanka App Icon" class="hero-logo">
+            <h1 id="hero-title">Blind Chess Sri Lanka</h1>
+            <p class="hero-subtitle">An accessible, audio-assisted chess application designed specifically for visually impaired and partially sighted players to enjoy the game of chess independently.</p>
+            
+            <div class="download-buttons">
+                <!-- Windows Download -->
+                <a href="BlindChessSetup.exe" class="btn btn-windows" aria-label="Download installer for Windows PC" download>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM11.25 1.899L24 0v11.55H11.25V1.899zM11.25 12.45H24v11.55l-12.75-1.9v-9.65z"/>
+                    </svg>
+                    Download for Windows
+                </a>
+                <!-- Android Download -->
+                <a href="BlindChess.apk" class="btn btn-android" aria-label="Download app package for Android Mobile" download>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.523 15.3c-.11-.03-.22-.05-.33-.05H6.89c-.11 0-.22.02-.33.05a.75.75 0 0 0-.44.97c.18.45.62.73 1.1.73H16.88c.48 0 .92-.28 1.1-.73a.75.75 0 0 0-.46-.97zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.1 14.5c-.32.8-.97 1.4-1.77 1.7-.33.12-.68.17-1.03.17H9.7c-.35 0-.7-.05-1.03-.17-.8-.3-1.45-.9-1.77-1.7C6.77 16.1 6.7 15.68 6.7 15.26c0-.9.36-1.77 1-2.4l1-1V9.7c0-1.8 1.46-3.26 3.26-3.26 1.8 0 3.26 1.46 3.26 3.26v2.16l1 1c.64.63 1 1.5 1 2.4c0 .42-.07.84-.22 1.24z"/>
+                    </svg>
+                    Download for Android
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" aria-labelledby="about-title">
+            <h2 class="section-title" id="about-title">About us</h2>
+            <div class="about-content">
+                <!-- Creator Card -->
+                <div class="author-card">
+                    <h3>Creator & Developer</h3>
+                    <p class="author-sub">Supun Sampath Kumara</p>
+                    <p class="author-desc">This software was created by Supun Sampath Kumara, who is a student in the Faculty of Arts at the University of Colombo.</p>
+                    <p class="author-desc">The primary goal is to empower visually impaired and partially sighted players to play chess independently without any external assistance.</p>
+                </div>
+                <!-- Game Description -->
+                <div class="about-intro-box">
+                    <h3>The Blind Chess Project</h3>
+                    <br>
+                    <p><strong>Blind Chess Sri Lanka</strong> is an innovative, fully accessible chess application specifically crafted to empower visually impaired and partially sighted individuals to enjoy the game of chess independently. Built with robust audio feedback and intuitive keyboard navigation, the application translates the complex visual board state into clear, descriptive voice announcements.</p>
+                    <p>Key features include coordinate-based jumps, real-time voice guidance on square content, legal move readouts, and sound effects for moves and captures. By adhering strictly to web and software accessibility guidelines, Blind Chess Sri Lanka creates an inclusive gaming environment, bridging the gap between digital chess and vision accessibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title">Contact us</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-info-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                        <span class="bank-value">Supun Sampath Kumara</span>
+                    </div>
+                    <div class="contact-info-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <a href="mailto:supunuoc@gmail.com" class="contact-link" aria-label="Send an email to supunuoc@gmail.com">supunuoc@gmail.com</a>
+                    </div>
+                    <div class="contact-info-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C9.1 6.42 8.9 5.23 8.9 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.58c0-.56-.45-1-1-1z"/>
+                        </svg>
+                        <a href="tel:+94702482580" class="contact-link" aria-label="Call developer at +94 70 248 2580">+94 70 248 2580</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section id="donate" aria-labelledby="donate-title">
+            <h2 class="section-title" id="donate-title">Donate</h2>
+            <div class="donate-container">
+                <p class="donate-appeal">Providing modern, fully accessible software to the visually impaired community free of charge requires ongoing development and resources. Your kind contributions will directly support this social mission and help keep this project sustainable.</p>
+                
+                <!-- Bank Card -->
+                <div class="bank-card">
+                    <h3>Bank Details</h3>
+                    <div class="bank-row">
+                        <span class="bank-label">Name:</span>
+                        <span class="bank-value">L A S S Kumara</span>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bank-label">Bank:</span>
+                        <span class="bank-value">Bank of Ceylon</span>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bank-label">Branch:</span>
+                        <span class="bank-value">Panadura Town</span>
+                    </div>
+                    <div class="bank-row">
+                        <span class="bank-label">Account Number:</span>
+                        <span class="bank-value">94476164</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer>
+        <div class="footer-logo">
+            <img src="icon.png" alt="Blind Chess Sri Lanka Small Logo" class="footer-logo-img">
+            <span class="footer-logo-text">Blind Chess Sri Lanka</span>
+        </div>
+        <p>&copy; 2026 Blind Chess Sri Lanka. All Rights Reserved. Created by Supun Sampath Kumara.</p>
+        <div class="footer-a11y-badge" aria-label="WCAG Web Accessibility Compliant Badge">WCAG 2.1 AAA Compliant</div>
+    </footer>
+</body>
+</html>
